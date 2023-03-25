@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="script.js" defer></script>
     <title>MovieCentral</title>
 </head>
+
 <body>
-    
+    <div class="navbar">
+        <div class="navbar-cont">
+            <div class="logo-cont">
+                <span>MovieCentral</span>
+            </div>
+            <div class="menu-cont">
+                <ul class="menu-list">
+                    <li class="menu-list-items active">Home</li>
+                    <li class="menu-list-items">Movies</li>
+                    <li class="menu-list-items">TV Shows</li>
+                    <li class="menu-list-items">Popular</li>
+                    <li class="menu-list-items">My List</li>
+                </ul>
+            </div>
+            <div class="profile-cont">
+                <img src="img/profile.jpg" alt="ProfilePic" class="dp">
+                <span class="profile-text">My Profile</span>
+                <i class="fas fa-caret-down"></i>
+                <div class="toggle-mode">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-cont">
+            <i class="left-menu-icon fas fa-search"></i>
+            <i class="left-menu-icon fas fa-home"></i>
+            <i class="left-menu-icon fas fa-users"></i>
+            <i class="left-menu-icon fas fa-bookmark"></i>
+            <i class="left-menu-icon fas fa-tv"></i>
+            <i class="left-menu-icon fas fa-shopping-cart"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-cont">
+            <div class="featured-cont">
+                <div class="featured-title"></div>
+                <p class="featured-desc">
+                    Walter White, a chemistry teacher, discovers that he has cancer and decides to get into the
+                    meth-making business to repay his medical debts. His priorities begin to change when he partners
+                    with Jesse.
+                </p>
+                <button class="play-btn">WATCH</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

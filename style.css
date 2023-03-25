@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.sidebar{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 60px;
+    height: 100vw ;
+}
+.navbar{
+    background-color: black;
+    height: 60px;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    font-family:'Sen', sans-serif ;
+}
+.navbar-cont{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.logo-cont{
+    flex: 1;
+}
+.logo-cont span{
+    padding: 0 0 0 70px;
+    font-family: 'Sen', sans-serif;
+    color: rgb(114, 211, 49);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-right: 5px;
+}
+.menu-cont{
+    flex: 6;
+    padding: 0 20px;
+    margin-left: 20px;
+    
+}
+.menu-cont ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+.menu-cont ul li{
+    margin: 0 20px;
+    font-size: 1.2rem;
+}
+.active{
+    font-weight: 800;
+}
+
+.profile-cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 2;
+}
+.profile-cont .dp{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.profile-cont span{
+    margin: 0 15px 0 25px;
+    font-size: 1.1rem;
+}
+.profile-cont .down-arrow{
+    width: 20px;
+    background-color: white;
+}
+.toggle-mode{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 47px;
+    height: 22px;
+    margin: 0 30px;
+    justify-content: space-around;
+    position: relative;
+}
+.toggle-ball{
+    background-color: black;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    /* left: 5px; */
+    right: 3.5px; 
+    cursor: pointer;
+}
+.fa-moon{
+    color: goldenrod;
+    margin-left: 3px;
+}
+.fa-sun{
+    color: goldenrod;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.sidebar-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+.sidebar-cont .left-menu-icon{
+    margin: 20px 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.content-cont{
+    background-color: #151515;
+    height: calc(100vh - 60px);
+    margin-left: 60px;
+}
+.featured-cont{
+   height: 60vh;
+    background:linear-gradient(to bottom,rgba(0,0,0,0),#151515), url(img/breaking-bad-poster22.jpeg) no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    padding: 60px 60px;
+    opacity: 0.89;
+}
+.featured-title{
+    width: 30%;
+    height: 40%;
+    background: url(img/1280px-Breaking_Bad_logo.svg.png) no-repeat;
+    background-size: 300px;
+    margin-top: 100px;
+    
+}
+.featured-desc{
+    width: 500px;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: lightgray;
+    margin: 30px 0 0 0;
+}
+.play-btn{
+    margin: 35px 0 0 0;
+    width: 100px;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #4dbf00;
+    color: white;
+    cursor: pointer;
+}
