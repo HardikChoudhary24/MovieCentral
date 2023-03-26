@@ -9,6 +9,7 @@ body{
     font-family: 'Roboto', sans-serif;
     color: white;
     overflow-x: hidden;
+    
 }
 .sidebar{
     background-color: black;
@@ -165,15 +166,17 @@ body{
 
 
 .movie-list-cont{
-    margin: 90px 10px 0;
+    margin: 50px 10px 0;
     padding: 30px;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 .movie-list-title{
     margin: 0 0 40px;
 }
 .movie-list-wrapper{
-    padding: 20px 0 0;
+    padding: 10px 0 0;
+    position: relative;
+    /* overflow-x: hidden; */
 }
 .movie-list{
     display: flex;
@@ -189,9 +192,12 @@ body{
     position: relative;
     border: 1px solid black;
     transition: all 0.6s ease-in-out;
+    border-radius: 20px;
 }
 .movie-list-item-img{
+    width :426.656px;
     height: 240px;
+    border-radius: 20px;
 }
 
 .movie-list-item:hover{
@@ -204,17 +210,22 @@ body{
     opacity: 0;
     position: absolute;
     bottom: 45px;
-    left: 7px;
+    left: 10px;
     font-size: 1.35rem;
 }
 .movie-list-item-btn{
     /* margin: 10px 0 0 10px; */
+    font-size: 0.85rem;
     position: absolute;
     bottom: 5px;
-    left: 7px;
+    left: 10px;
     opacity: 0;
     width: 70px;
     height: 35px;
+}
+.bookmark{
+    left: 87px;
+    background-color: rgb(1, 111, 201);
 }
 .fade{
     position: absolute;
@@ -226,6 +237,7 @@ body{
     width:426.656px;
     height: 240px;
     display: none;
+    border-radius: 20px;
 }
 .movie-list-item:hover .fade{
     display: inline;
@@ -233,7 +245,26 @@ body{
 
 .movie-list-item:hover .movie-list-item-title,
 .movie-list-item:hover .movie-list-item-btn{
-    /* display: inline; */
     opacity: 1;
+}
+
+.slider{
+    /* background-color: rgb(60, 60, 60); */
+    height: 241px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    opacity: 0.1;
+    cursor: pointer;
+}
+.slider:hover{
+    opacity: 0.9;
+}
+.slider .arrow{
+    font-size: 3rem;
 }
 
