@@ -15,3 +15,16 @@ arrows.forEach((arrow,i)=>{
         }
     })
 })
+
+const toggleBall=document.querySelector(".toggle-ball");
+const toggleMode=document.querySelector(".toggle-mode");
+const body=document.querySelector("body");
+toggleMode.addEventListener("click",()=>{
+    body.classList.toggle("dark-theme");
+    if(body.classList.contains("dark-theme")){
+        toggleBall.style.transform="translateX(-21px)";
+    }
+    else{
+        toggleBall.style.transform="translateX(0)";
+    }
+})
