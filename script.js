@@ -5,13 +5,23 @@ arrows.forEach((arrow,i)=>{
     arrow.addEventListener("click",(e)=>{
         btnCounter++;
         let movieList=movieLists[i];
-        let moviListItems = movieList.children;
-        let slider = movieLists[i].nextElementSibling;
-        let locationFinal=slider.getBoundingClientRect();
-        let locationTarget= moviListItems[5].getBoundingClientRect();
-        // btnCounter<=2
-        if(locationTarget.left>locationFinal.left){
-        movieList.style.transform=`translateX(${movieList.computedStyleMap().get("transform")[0].x.value-550}px)`;
+        let ratio = window.innerWidth-60-10;
+        let totalItems = Math.floor(ratio/426.656);
+        console.log(totalItems)
+        if(6-(totalItems+btnCounter)>=0){
+            let translateValue=0;
+            switch(totalItems){
+                case 4 : translateValue =380;
+                        break;
+                case 3 : translateValue =395;
+                        break;
+                case 2 : translateValue =400;
+                        break;
+                case 1 : translateValue =390;
+                        break;
+                default : translateValue =380;            
+            }
+            movieList.style.transform=`translateX(${movieList.computedStyleMap().get("transform")[0].x.value-translateValue}px)`;
         }
         else{
             movieList.style.transform="translate(0)";

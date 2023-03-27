@@ -39,7 +39,7 @@ body{
     position: fixed;
     top: 0;
     width: 60px;
-    height: 100vw ;
+    min-height: 100vw ;
 }
 .navbar{
     background-color: var(--secondry-backgroundcolor);
@@ -174,8 +174,7 @@ body{
     margin: 60px 0;
 }
 .featured-title img{
-    width: 273px;
-    
+    max-width: 273px;  
 }
 .featured-desc{
     width: 500px;
@@ -226,23 +225,22 @@ body{
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin: 0 10px 0 40px;
+    margin: 0 5px 0 10px;
     position: relative;
     border: 1px solid black;
     transition: all 0.6s ease-in-out;
     border-radius: 20px;
-    transform: translateX(0);
     
 }
 .movie-list-item-img{
-    width :426.656px;
+    width :400px;
     height: 240px;
     border-radius: 20px;
 }
 
 .movie-list-item:hover{
     transform: scale(1.2);
-    margin: 0 20px 0 70px;
+    margin: 0 40px 0 70px;
 }
 
 .movie-list-item-title{
@@ -275,7 +273,7 @@ body{
     left: 0;
     /* right: 0; */
     background-image: linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.6));
-    width:426.656px;
+    width:400px;
     height: 240px;
     display: none;
     border-radius: 20px;
@@ -309,3 +307,57 @@ body{
     font-size: 3rem;
 }
 
+@media (max-width : 1134px){
+    .menu-cont{
+        display: none;
+    }
+    .profile-cont{
+        flex: 1;
+    }
+    
+}
+@media (max-width : 830px){
+    .sidebar{
+        display: none;
+    }
+    .content-cont{
+        margin-left: 0px;
+    }
+    .logo-cont span{
+        padding: 0 0 0 10px;
+    }
+    
+}
+@media (max-width : 623px){
+    .profile-text{
+        display: none;
+    }
+    .dp{
+        margin-right: 10px;
+    }
+    .featured-desc{
+        display: none;
+    }
+    .featured-title img{
+        width: 180px;  
+    }
+    .flex-cont{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .flex-cont .play-btn{
+        width: 80px;
+        height: 30px;
+    }
+
+}
+@media (max-width : 425px){
+    .toggle-mode{
+        display: none;
+    }
+    .profile-cont{
+        margin-right: 10px;
+    }
+
+}
